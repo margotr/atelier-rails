@@ -1,1 +1,11 @@
-adfadadf
+
+
+<% @users.each do |user| %>
+  <li>
+    <%= link_to user.name, user %>
+  </li>
+<% end %>
+
+<script>
+    console.log(<%= @users %>)
+</script>
